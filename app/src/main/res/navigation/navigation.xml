@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/prepFragment">
+
+    <fragment
+        android:id="@+id/prepFragment"
+        android:name="jp.thinkdifferent.devsurface.presentation.views.LoFragment"
+        android:label="fragment_prep"
+        tools:layout="@layout/fragment_loa" >
+        <action
+            android:id="@+id/action_prepFragment_to_controlFragment"
+            app:destination="@id/controlFragment" />
+        <action
+            android:id="@+id/action_prepFragment_to_policyFragment"
+            app:destination="@id/policyFragment" />
+        <action
+            android:id="@+id/action_prepFragment_to_noNetFragment"
+            app:destination="@id/noNetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/controlFragment"
+        android:name="jp.thinkdifferent.devsurface.presentation.views.ControlFragment"
+        android:label="fragment_control"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_controlFragment_to_entertainmentFragment"
+            app:destination="@id/entertainmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/entertainmentFragment"
+        android:name="jp.thinkdifferent.devsurface.presentation.views.EntertainmentFragment"
+        android:label="fragment_entertainment"
+        tools:layout="@layout/fragment_entertainment" >
+        <action
+            android:id="@+id/action_entertainmentFragment_to_controlFragment"
+            app:destination="@id/controlFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/policyFragment"
+        android:name="jp.thinkdifferent.devsurface.presentation.views.PolicyFragment"
+        android:label="fragment_policy"
+        tools:layout="@layout/fragment_poli" >
+        <action
+            android:id="@+id/action_policyFragment_to_controlFragment"
+            app:destination="@id/controlFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noNetFragment"
+        android:name="jp.thinkdifferent.devsurface.presentation.views.NoNetFragment"
+        android:label="fragment_no_net"
+        tools:layout="@layout/fragment_no_inet" >
+        <action
+            android:id="@+id/action_noNetFragment_to_prepFragment2"
+            app:destination="@id/prepFragment" />
+    </fragment>
+</navigation>
