@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Relax With Joker</string>
-    <string name="play_game">Exit game</string>
-    <string name="leave_app">Leave app</string>
+    <string name="play_game">Play game</string>
+    <string name="leave_app">Exit app</string>
     <string name="game_over">Game Over</string>
     <string name="f_id">889169122640259</string>
     <string name="token">0bbaf385ccff51cb936970ec0ee95ab7</string>

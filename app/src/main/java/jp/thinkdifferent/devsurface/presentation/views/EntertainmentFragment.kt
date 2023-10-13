@@ -98,10 +98,10 @@ class EntertainmentFragment : Fragment() {
             layoutParams.height = (100..300).random()
             setImageResource(
                 when ((1..4).random()) {
-                    1 -> R.drawable.y
-                    2 -> R.drawable.w
-                    3 -> R.drawable.s
-                    else -> R.drawable.k
+                    1 -> R.drawable.yyy
+                    2 -> R.drawable.www
+                    3 -> R.drawable.sss
+                    else -> R.drawable.kkk
                 }
             )
             x = ((-95)..(widthA + 95)).random().toFloat()
