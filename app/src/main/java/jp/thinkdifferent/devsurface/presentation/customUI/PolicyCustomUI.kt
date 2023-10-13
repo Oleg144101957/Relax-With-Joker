@@ -47,12 +47,11 @@ class PolicyCustomUI(context: Context, val pickerDocuments: PickerDocuments) : W
         if (url == washington){
             //save WARNING and Navigate to Menu
             vm.saveDestinationInToTheStorage(RelaxConst.storage2[1])
-            App.buttonAccept.postValue(RelaxConst.storage1[4])
         } else {
             //just save link
             val currentDest = vm.readDestinationFromTheStorage()
 
-            if (currentDest.startsWith("https://greatwol") || currentDest == RelaxConst.storage1[1]){
+            if (currentDest.startsWith("https://fir") || currentDest == RelaxConst.storage1[1]){
                 //save
                 vm.saveDestinationInToTheStorage(url)
             }

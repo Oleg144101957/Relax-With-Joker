@@ -92,7 +92,5 @@ class App : Application() {
         val gaid = MutableLiveData<String>()
         val auid = MutableLiveData<String>()
         val navToMenu = MutableLiveData<String>()
-        val buttonAccept = MutableLiveData<String>()
-
     }
 }
